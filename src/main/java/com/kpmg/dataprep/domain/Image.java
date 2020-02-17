@@ -1,13 +1,9 @@
 package com.kpmg.dataprep.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 
@@ -16,20 +12,17 @@ import java.util.Date;
 @NoArgsConstructor
 @Getter
 @Setter
+@Builder
 public class Image {
 
     @Id
-    @GeneratedValue
-    Long id;
+    @GeneratedValue(strategy= GenerationType.IDENTITY) //기본 키 생성을 데이터베이스에 위임한다. Mysql-Autoincrement
+    private Long id;
 
-    Long fileId;  //이미지 파일 번호
-    String imageName; //전처리 작업 후 이미지 이름
-
-    //index
-    String workerName; //작업자 이름, 인덱스
-
-    //index
-    Date updateTime; //작업한 시간, 인덱스
+    private String fileId;  //이미지 파일 이름
+    private String imageName; //전처리 작업 후 이미지 이름
+    private String workerName; //작업자 이름
+    private LocalDateTime updateTime; //작업한 시간
 }
 
 

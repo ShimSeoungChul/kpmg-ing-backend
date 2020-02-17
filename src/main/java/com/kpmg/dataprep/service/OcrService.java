@@ -1,6 +1,5 @@
 package com.kpmg.dataprep.service;
 
-import com.kpmg.dataprep.repository.ImageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -26,8 +25,10 @@ public class OcrService {
 
     //파이썬 파일의 머신러닝 코드를 통해 OCR 정보 데이터 생성하기
     public Map<String,String> makeImageInfo(MultipartHttpServletRequest multiRequest) throws Exception {
-        //이미지 저장
-       // String filename = fileService.addFile(multiRequest);
+        //이미지를 파일로 저장
+        String filename = fileService.addFile(multiRequest);
+
+
 
         Map<String, String> map = new HashMap<>();
         //파이썬 파일을 통해 이미지 정보 가져와서 변수에 저장하기
@@ -47,9 +48,7 @@ public class OcrService {
         }catch (IOException ie){
             ie.printStackTrace();
         }
-
         //이미지 정보 저장
-
         return map;
     }
 }

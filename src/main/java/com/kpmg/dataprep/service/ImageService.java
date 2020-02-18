@@ -51,13 +51,13 @@ public class ImageService {
 //    }
 
     //파이썬 파일의 머신러닝 코드를 통해 이미지 정보 데이터 생성하기
-    public Map<String,String> makeImageInfo(HttpServletRequest request) throws Exception {
+    public Map<String,String> makeImageInfo(HttpServletRequest request){
         System.out.println(tag+"makeImageInfo");
 
-   Map<String, String> map = new HashMap<>();
+   Map<String, String> rslt = new HashMap<>();
    //이미지를 파일로 저장
     String imageNm = fileService.addFile(request);
-    map.put("imageNm",imageNm);
+        rslt.put("imageNm",imageNm);
 
     //이미지 정보를 데이터베이스에 저장
     Image saveImage = Image.builder()
@@ -76,18 +76,19 @@ public class ImageService {
             Process p = Runtime.getRuntime().exec(path);
             BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
             while((s = in.readLine()) != null){
-                map.put(Integer.toString(imageInfoIndex),s);
+                rslt.put(Integer.toString(imageInfoIndex),s);
                 ++imageInfoIndex;
                 System.out.println(s);
             }
-            map.put("rslt","SUCC");
+            rslt.put("rslt","SUCC");
         }catch (IOException ie){
-            map.put("rslt","FAIL");
+            rslt.put("rslt","FAIL");
             System.out.println(tag+"실패원인:"+ie.getMessage()+"\n");
+            return rslt;
         }
 
     //이미지 정보 저장
-    return map;
+    return rslt;
     }
 
     public Image insert(Image image){

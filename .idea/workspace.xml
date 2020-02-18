@@ -7,27 +7,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d804f5d9-f6d3-4d79-831e-01dbf3138eb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/dao/FileInfoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/cmmn/CmmnUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/cmmn/CmmnUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/controller/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/domain/FileInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/domain/FileInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/domain/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/domain/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/controller/OcrController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/dao/OcrRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/dao/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/kpmg/dataprep/cmmn/CmmnUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/kpmg/dataprep/cmmn/CmmnUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/kpmg/dataprep/domain/Ocr.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/kpmg/dataprep/domain/Ocr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/kpmg/dataprep/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/kpmg/dataprep/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/kpmg/dataprep/service/FileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/kpmg/dataprep/service/FileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/kpmg/dataprep/service/ImageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/kpmg/dataprep/service/ImageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/kpmg/dataprep/service/OcrService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/kpmg/dataprep/service/OcrService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/kpmg/dataprep/service/OcrServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/kpmg/dataprep/service/OcrServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.kpmg.dataprep.service.ImageServiceTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.kpmg.dataprep.service.ImageServiceTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.kpmg.dataprep.service.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.kpmg.dataprep.service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.kpmg.dataprep.service.ImageServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.kpmg.dataprep.service.ImageServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/domain/Ocr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/domain/Ocr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/repository/ImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/dao/ImageRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/service/FileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/service/ImageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/service/OcrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep/service/OcrService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kpmg/dataprep/service/FileServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kpmg/dataprep/service/FileServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kpmg/dataprep/service/ImageServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kpmg/dataprep/service/ImageServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kpmg/dataprep/service/OcrServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kpmg/dataprep/service/OcrServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="241" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
@@ -56,8 +82,8 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -83,26 +109,32 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="repository" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.kpmg.dataprep.service" />
       <recent name="com.kpmg.dataprep.controller" />
     </key>
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="repository" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.kpmg.dataprep.service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/python" />
       <recent name="$PROJECT_DIR$/src/main/java/com/kpmg/dataprep" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.kpmg.dataprep.controller" />
     </key>
   </component>
   <component name="RunManager" selected="Application.DataprepApplication">
@@ -125,46 +157,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="ImageServiceTest.create" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.kpmg.dataprep.service.ImageServiceTest.create&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="OcrServiceTest.readPython" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.kpmg.dataprep.service.OcrServiceTest.readPython&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="ImageServiceTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dataprep" />
@@ -198,13 +190,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OcrServiceTest.makeGoodsInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dataprep" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kpmg.dataprep.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kpmg.dataprep.service" />
+      <option name="MAIN_CLASS_NAME" value="com.kpmg.dataprep.service.OcrServiceTest" />
+      <option name="METHOD_NAME" value="makeGoodsInfo(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OcrServiceTest.ocrParsingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dataprep" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kpmg.dataprep.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kpmg.dataprep.service" />
+      <option name="MAIN_CLASS_NAME" value="com.kpmg.dataprep.service.OcrServiceTest" />
+      <option name="METHOD_NAME" value="ocrParsingTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OcrServiceTest.ocrParsingTest" />
+        <item itemvalue="JUnit.OcrServiceTest.makeGoodsInfo" />
         <item itemvalue="JUnit.ImageServiceTest.update" />
         <item itemvalue="JUnit.ImageServiceTest.create" />
         <item itemvalue="Application.DataprepApplication" />
-        <item itemvalue="Gradle.ImageServiceTest.create" />
-        <item itemvalue="Gradle.OcrServiceTest.readPython" />
       </list>
     </recent_temporary>
   </component>
@@ -222,6 +246,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2240" y="-37" key="#Auto_Import" timestamp="1582027004417">
+      <screen x="1680" y="-242" width="1920" height="1080" />
+    </state>
+    <state x="2240" y="-37" key="#Auto_Import/0.0.1680.1050/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1582027004417" />
     <state x="2343" y="-37" key="#DataprepApplication" timestamp="1581662927617">
       <screen x="1680" y="-242" width="1920" height="1080" />
     </state>
@@ -251,10 +279,10 @@
     </state>
     <state x="2646" y="482" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1680.1027/1680.23.1920.1057@1680.23.1920.1057" timestamp="1581256140981" />
     <state x="845" y="469" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1581080371970" />
-    <state x="2428" y="164" width="423" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1581589666212">
+    <state x="2428" y="164" width="423" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582024736063">
       <screen x="1680" y="-242" width="1920" height="1080" />
     </state>
-    <state x="2428" y="164" width="423" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1680.1050/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1581589666212" />
+    <state x="2428" y="164" width="423" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1680.1050/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1582024736063" />
     <state x="2241" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581263319686">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
@@ -263,67 +291,76 @@
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state x="2311" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027/1680.23.1920.1057@1680.23.1920.1057" timestamp="1581256439279" />
-    <state width="1638" height="381" key="GridCell.Tab.0.bottom" timestamp="1581916115493">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1638" height="368" key="GridCell.Tab.0.bottom" timestamp="1582041616989">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1878" height="395" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1581669527064" />
+    <state width="1878" height="393" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.-149.1920.1080@1680.-149.1920.1080" timestamp="1581958556021" />
+    <state width="1878" height="393" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1582032371289" />
     <state width="1878" height="395" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1581603241045" />
     <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1581262201103" />
-    <state width="1638" height="381" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581858840373" />
+    <state width="1638" height="368" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582041616989" />
     <state width="1855" height="300" key="GridCell.Tab.0.bottom/0.23.1680.1027/1680.-126.1920.1057@1680.-126.1920.1057" timestamp="1581348391377" />
+    <state width="1878" height="393" key="GridCell.Tab.0.bottom/0.23.1680.1027/1680.-149.1920.1080@1680.-149.1920.1080" timestamp="1581958262503" />
     <state width="1638" height="381" key="GridCell.Tab.0.bottom/0.23.1680.1027/1680.-219.1920.1057@0.23.1680.1027" timestamp="1581916115493" />
     <state width="1878" height="395" key="GridCell.Tab.0.bottom/0.23.1680.1027/1680.0.1920.1080@1680.0.1920.1080" timestamp="1581603189087" />
     <state width="1878" height="395" key="GridCell.Tab.0.bottom/0.23.1680.1027/1680.23.1920.1057@1680.23.1920.1057" timestamp="1581608402425" />
     <state width="1552" height="336" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1581740270409" />
-    <state width="1638" height="381" key="GridCell.Tab.0.center" timestamp="1581916115492">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1638" height="368" key="GridCell.Tab.0.center" timestamp="1582041616985">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1878" height="395" key="GridCell.Tab.0.center/0.0.1680.1050/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1581669527062" />
+    <state width="1878" height="393" key="GridCell.Tab.0.center/0.0.1680.1050/1680.-149.1920.1080@1680.-149.1920.1080" timestamp="1581958556020" />
+    <state width="1878" height="393" key="GridCell.Tab.0.center/0.0.1680.1050/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1582032371288" />
     <state width="1878" height="395" key="GridCell.Tab.0.center/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1581603241043" />
     <state width="1638" height="294" key="GridCell.Tab.0.center/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1581262201100" />
-    <state width="1638" height="381" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581858840372" />
+    <state width="1638" height="368" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582041616985" />
     <state width="1855" height="300" key="GridCell.Tab.0.center/0.23.1680.1027/1680.-126.1920.1057@1680.-126.1920.1057" timestamp="1581348391376" />
+    <state width="1878" height="393" key="GridCell.Tab.0.center/0.23.1680.1027/1680.-149.1920.1080@1680.-149.1920.1080" timestamp="1581958262502" />
     <state width="1638" height="381" key="GridCell.Tab.0.center/0.23.1680.1027/1680.-219.1920.1057@0.23.1680.1027" timestamp="1581916115492" />
     <state width="1878" height="395" key="GridCell.Tab.0.center/0.23.1680.1027/1680.0.1920.1080@1680.0.1920.1080" timestamp="1581603189084" />
     <state width="1878" height="395" key="GridCell.Tab.0.center/0.23.1680.1027/1680.23.1920.1057@1680.23.1920.1057" timestamp="1581608402424" />
     <state width="1552" height="336" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1581740270408" />
-    <state width="1638" height="381" key="GridCell.Tab.0.left" timestamp="1581916115492">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1638" height="368" key="GridCell.Tab.0.left" timestamp="1582041616985">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1878" height="395" key="GridCell.Tab.0.left/0.0.1680.1050/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1581669527061" />
+    <state width="1878" height="393" key="GridCell.Tab.0.left/0.0.1680.1050/1680.-149.1920.1080@1680.-149.1920.1080" timestamp="1581958556019" />
+    <state width="1878" height="393" key="GridCell.Tab.0.left/0.0.1680.1050/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1582032371287" />
     <state width="1878" height="395" key="GridCell.Tab.0.left/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1581603241041" />
     <state width="1638" height="294" key="GridCell.Tab.0.left/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1581262201099" />
-    <state width="1638" height="381" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581858840371" />
+    <state width="1638" height="368" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582041616985" />
     <state width="1855" height="300" key="GridCell.Tab.0.left/0.23.1680.1027/1680.-126.1920.1057@1680.-126.1920.1057" timestamp="1581348391376" />
+    <state width="1878" height="393" key="GridCell.Tab.0.left/0.23.1680.1027/1680.-149.1920.1080@1680.-149.1920.1080" timestamp="1581958262501" />
     <state width="1638" height="381" key="GridCell.Tab.0.left/0.23.1680.1027/1680.-219.1920.1057@0.23.1680.1027" timestamp="1581916115492" />
     <state width="1878" height="395" key="GridCell.Tab.0.left/0.23.1680.1027/1680.0.1920.1080@1680.0.1920.1080" timestamp="1581603189083" />
     <state width="1878" height="395" key="GridCell.Tab.0.left/0.23.1680.1027/1680.23.1920.1057@1680.23.1920.1057" timestamp="1581608402423" />
     <state width="1552" height="336" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1581740270408" />
-    <state width="1638" height="381" key="GridCell.Tab.0.right" timestamp="1581916115492">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1638" height="368" key="GridCell.Tab.0.right" timestamp="1582041616987">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1878" height="395" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1581669527063" />
+    <state width="1878" height="393" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-149.1920.1080@1680.-149.1920.1080" timestamp="1581958556020" />
+    <state width="1878" height="393" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1582032371288" />
     <state width="1878" height="395" key="GridCell.Tab.0.right/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1581603241044" />
     <state width="1638" height="294" key="GridCell.Tab.0.right/0.0.1680.1050/1680.23.1920.1057@1680.23.1920.1057" timestamp="1581262201102" />
-    <state width="1638" height="381" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581858840372" />
+    <state width="1638" height="368" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582041616987" />
     <state width="1855" height="300" key="GridCell.Tab.0.right/0.23.1680.1027/1680.-126.1920.1057@1680.-126.1920.1057" timestamp="1581348391377" />
+    <state width="1878" height="393" key="GridCell.Tab.0.right/0.23.1680.1027/1680.-149.1920.1080@1680.-149.1920.1080" timestamp="1581958262503" />
     <state width="1638" height="381" key="GridCell.Tab.0.right/0.23.1680.1027/1680.-219.1920.1057@0.23.1680.1027" timestamp="1581916115492" />
     <state width="1878" height="395" key="GridCell.Tab.0.right/0.23.1680.1027/1680.0.1920.1080@1680.0.1920.1080" timestamp="1581603189086" />
     <state width="1878" height="395" key="GridCell.Tab.0.right/0.23.1680.1027/1680.23.1920.1057@1680.23.1920.1057" timestamp="1581608402425" />
     <state width="1552" height="336" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1581740270409" />
-    <state x="2430" y="-83" key="SettingsEditor" timestamp="1581668551195">
-      <screen x="1680" y="-242" width="1920" height="1080" />
+    <state x="656" y="154" key="SettingsEditor" timestamp="1582042494197">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="2430" y="-83" key="SettingsEditor/0.0.1680.1050/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1581668551195" />
-    <state x="656" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1581129521179" />
+    <state x="2430" y="-83" key="SettingsEditor/0.0.1680.1050/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1582024329424" />
+    <state x="656" y="154" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582042494197" />
     <state x="2430" y="-83" key="SettingsEditor/0.23.1680.1027/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1581668483302" />
     <state x="683" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1581128159712" />
-    <state x="1911" y="197" key="com.intellij.ide.util.TipDialog" timestamp="1581943168619">
-      <screen x="1680" y="-126" width="1920" height="1057" />
+    <state x="202" y="337" key="com.intellij.ide.util.TipDialog" timestamp="1582040478944">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="202" y="337" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581509130111" />
+    <state x="202" y="337" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582040478944" />
     <state x="1911" y="197" key="com.intellij.ide.util.TipDialog/0.23.1680.1027/1680.-126.1920.1057@1680.-126.1920.1057" timestamp="1581943168619" />
     <state x="1911" y="104" key="com.intellij.ide.util.TipDialog/0.23.1680.1027/1680.-219.1920.1057@1680.-219.1920.1057" timestamp="1581388260923" />
+    <state x="1911" y="88" key="com.intellij.ide.util.TipDialog/0.23.1680.1027/1680.-242.1920.1080@1680.-242.1920.1080" timestamp="1582020527243" />
     <state x="202" y="337" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1581417525852" />
     <state x="589" y="274" width="465" height="501" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581510170581">
       <screen x="0" y="0" width="1680" height="1050" />
@@ -331,9 +368,20 @@
     <state x="2353" y="282" width="465" height="501" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1581261948790" />
     <state x="589" y="274" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581510170581" />
     <state x="2353" y="299" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1680.1027/1680.23.1920.1057@1680.23.1920.1057" timestamp="1581261671698" />
+    <state x="498" y="282" width="683" height="486" key="find.popup" timestamp="1582042089972">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="498" y="282" width="683" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1582042089972" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1582042085051">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1582042085051" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/dataprep$ImageServiceTest_update.ic" NAME="ImageServiceTest.update Coverage Results" MODIFIED="1581852052499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.kpmg.dataprep.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/dataprep$OcrServiceTest_makeGoodsInfo.ic" NAME="OcrServiceTest.makeGoodsInfo Coverage Results" MODIFIED="1581958447439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.kpmg.dataprep.service.*</FILTER>
     </SUITE>
   </component>

@@ -4,20 +4,15 @@ import com.kpmg.dataprep.cmmn.CmmnUtil;
 import com.kpmg.dataprep.dao.FileInfoRepository;
 import com.kpmg.dataprep.domain.FileInfo;
 import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
-import javafx.util.Builder;
-import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.util.Base64Utils;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.Map;
 
 @Service
 public class FileService {

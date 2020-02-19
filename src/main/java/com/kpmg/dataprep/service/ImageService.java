@@ -40,8 +40,6 @@ public class ImageService {
     @Value("${python.file.dir}")
     String pythonFileDir;
 
-
-
 //    public Image getImage(){
 //    }
 

@@ -8,6 +8,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
 
+
+//20point
 @Entity(name = "ocr")
 @AllArgsConstructor
 @NoArgsConstructor

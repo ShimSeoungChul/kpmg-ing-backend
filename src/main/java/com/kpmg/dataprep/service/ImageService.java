@@ -133,6 +133,19 @@ public class ImageService {
         return selected;
     }
 
+    public int getPoint(String id){
+        ArrayList<Image> selected = imageRepository.findByWorkerName(id);
+        System.out.println(selected.size());
+        int point = 0;
+        for (Image tmp : selected) {
+            if(tmp.getUpdateTime() != null && !tmp.getUpdateTime().equals("") ){
+                point = point+10;
+            }
+        }
+        return point;
+    }
+
+
 
 //    public List<Image> updateList(HttpServletRequest request){
 //        List<Image> imageList = new ArrayList<Image>;

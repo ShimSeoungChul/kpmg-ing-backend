@@ -1,8 +1,11 @@
 package com.kpmg.dataprep.controller;
 
 
+import com.kpmg.dataprep.cmmn.CmmnUtil;
+import com.kpmg.dataprep.domain.Ocr;
 import com.kpmg.dataprep.service.ImageService;
 import com.kpmg.dataprep.service.OcrService;
+import lombok.Builder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -10,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.Map;
 
 @RestController
@@ -29,12 +34,24 @@ public class OcrController {
         return map;
     }
 
-    @PutMapping(value = "/")
-    public Map<String , String> update(HttpServletRequest request){
-        System.out.println(tag+"updateImageInfo");
-        Map<String, String> map = ocrService.update(request);
-
-        return map;
+    @PostMapping(value = "/")
+    public Map<String , String> insert(HttpServletRequest request) throws Exception {
+        System.out.println(tag+"insert");
+        String jsnStr = CmmnUtil.getJsnStr(request);
+        Ocr ocr = Ocr.builder()
+                .fileId(CmmnUtil.getStrValFromJsnStr(jsnStr, "fileId"))
+                .ocrInfo(CmmnUtil.getStrValFromJsnStr(jsnStr, "ocrInfo"))
+                .workerName(CmmnUtil.getStrValFromJsnStr(jsnStr, "workerName"))
+                .updateTime(LocalDateTime.now())
+                .build();
+        Ocr saved = ocrService.insert(ocr);
+        Map<String,String> rslt = new HashMap<>();
+        if(saved != null){
+            rslt.put("rslt","SUCC");
+        }else{
+            rslt.put("rslt","FAIL");
+        }
+        return rslt;
     }
 
 

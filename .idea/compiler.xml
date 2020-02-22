@@ -15,4 +15,9 @@
       <module name="dataprep.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dataprep" options="--add-exports java.xml/com.sun.org.apache.xerces.internal.impl.dv.util=ALL-UNNAMED" />
+    </option>
+  </component>
 </project>

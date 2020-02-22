@@ -14,6 +14,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -38,13 +39,6 @@ public class OcrService {
         //ocr 처리용 이미지를 파일로 저장
         String ocrImageNm = fileService.addFile(request);
         rslt.put("ocrImageNm", ocrImageNm);
-
-        //ocr 처리용 이미지를 정보를 데이터베이스에 저장
-        Ocr saveOcrImage = Ocr.builder()
-                .fileId(ocrImageNm)
-                .workerName("test")
-                .build();
-        Ocr saved = insert(saveOcrImage);
 
         try {
             int imageInfoIndex = 0;
@@ -74,12 +68,9 @@ public class OcrService {
                     } else if (pars.equals("00")) { //상품
                         //  goods.put() //상품의 이름, 수량 , 가격
                         String[] words = makeGoodsInfo(s);
-                        Map<Object,Object> detail = new HashMap<>();
-                        detail.put("name",words[0]);
-                        detail.put("num",words[1]);
-                        detail.put("price",words[2]);
-                        goods.put(goodNum, detail);
-                        goodNum++;
+                        rslt.put("name",words[0]);
+                        rslt.put("num",words[1]);
+                        rslt.put("price",words[2]);
                     } else if (pars.equals("구매")) { // 상품 금액
                         String tmp = s.replace(" ", "");  //공백제거
                         String[] strings = tmp.split("액"); //'액' 문자 기준으로 문자열 나누기
@@ -138,39 +129,16 @@ public class OcrService {
         return saved;
     }
 
-    public Map<String, String> update(HttpServletRequest request) {
-        Map<String, String> rslt = new HashMap<>();
-        try {
-            String jsnStr = CmmnUtil.getJsnStr(request);
-            String fileId = CmmnUtil.getStrValFromJsnStr(jsnStr, "fileId");
-            String ocrInfo = CmmnUtil.getStrValFromJsnStr(jsnStr, "ocrInfo");
-
-            Ocr ocr = Ocr.builder()
-                    .fileId(fileId)
-                    .ocrInfo(ocrInfo)
-                    .build();
-
-            Optional<Ocr> findOcr = ocrRepository.findByFileId(ocr.getFileId());
-
-            findOcr.map(selectOcr ->{
-                selectOcr.setOcrInfo(ocr.getOcrInfo());
-                selectOcr.setUpdateTime(LocalDateTime.now());
-                Ocr updated = ocrRepository.save(selectOcr);
-                if(updated != null){
-                    rslt.put("rslt","SUCC");
-                }else {
-                    System.out.println(tag+"실패원인:update 실패 \n");
-                    rslt.put("rslt","FAIL");
-                }
-                return rslt;
-            });
-
-            return rslt;
-        }catch (Exception e){
-            System.out.println(tag+"실패원인:"+e.getMessage()+"\n");
-            rslt.put("rslt","FAIL");
-            return rslt;
+    public int getPoint(String id){
+        ArrayList<Ocr> selected = ocrRepository.findByWorkerName(id);
+        System.out.println(selected.size());
+        int point = 0;
+        for (Ocr tmp : selected) {
+            if(tmp.getUpdateTime() != null && !tmp.getUpdateTime().equals("") ){
+                point = point+20;
+            }
         }
+        return point;
     }
 
 }

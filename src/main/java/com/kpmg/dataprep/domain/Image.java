@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Date;
 
-
+//10point
 @Entity(name = "image")
 @AllArgsConstructor
 @NoArgsConstructor
